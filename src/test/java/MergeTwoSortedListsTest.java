@@ -18,7 +18,7 @@ class MergeTwoSortedListsTest {
     @Test
     void run(){
         result = solution(new ListNode(), list1, list2);
-        while (result.next != null){
+        while (result.val != 0){
             System.out.println(result.val);
             result = result.next;
         }
