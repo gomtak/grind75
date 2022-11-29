@@ -3,6 +3,8 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 class MergeTwoSortedListsTest {
 
     ListNode list1 = new ListNode();
@@ -18,9 +20,9 @@ class MergeTwoSortedListsTest {
     @Test
     void run(){
         result = solution(new ListNode(), list1, list2);
-        while (result.val != 0){
-            System.out.println(result.val);
-            result = result.next;
+        while (this.result != null){
+            System.out.println(this.result.val);
+            this.result = this.result.next;
         }
     }
 
